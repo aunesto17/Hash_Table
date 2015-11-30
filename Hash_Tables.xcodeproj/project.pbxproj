@@ -25,6 +25,8 @@
 /* Begin PBXFileReference section */
 		F4105C9B1BF16E0F006E5028 /* Hash_Tables */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Hash_Tables; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4105C9E1BF16E0F006E5028 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		F48755D51C00D5C600F0524A /* HashTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HashTable.h; sourceTree = "<group>"; };
+		F48755DA1C00D66C00F0524A /* linked_list.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = linked_list.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,8 @@
 			isa = PBXGroup;
 			children = (
 				F4105C9E1BF16E0F006E5028 /* main.cpp */,
+				F48755D51C00D5C600F0524A /* HashTable.h */,
+				F48755DA1C00D66C00F0524A /* linked_list.hpp */,
 			);
 			path = Hash_Tables;
 			sourceTree = "<group>";
@@ -237,6 +241,7 @@
 				F4105CA41BF16E0F006E5028 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
