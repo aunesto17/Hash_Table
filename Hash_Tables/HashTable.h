@@ -4,7 +4,11 @@
 
 #include "linked_list.hpp"
 
-
+template<class T>
+class cListAdapter {
+public:
+    
+};
 
 int numRandom(int a,int b)
 {
@@ -75,51 +79,13 @@ uint32_t murmurhash (const char *key, uint32_t len, uint32_t seed) {
     return h;
 }
 
-// Struct de Funciones
-
-/*
-template<class T>
-int hashInt(T x)
-{
-    
-}
-
-template<class T>
-int hashStr(T x,int length)
-{
-    int value = 0;
-    for (int i = 0; i < x.length(); i++)
-        value += x[i];
-    return (x.length() * value) % length;
-}
-
-
-template<class T>
-struct CHashTraitInt
-{
-    typedef T D;
-    
-};
-
-template<class T>
-struct CHashTraitInt
-{
-    typedef T D;
-    
-};
-
-template<class T>
-struct CHashTraitStr
-{
-    typedef T           D;
-    typedef hashStr<T>  F;
-};
-*/
+// Clase Hash
 
 template<class T>
 class HashTable
 {
 private:
+    
     typedef unsigned int uint32;
     // Array es una referencia a un array de listas enlazadas.
     cList<T> * array;
@@ -132,6 +98,7 @@ private:
     int hash(T);
     int seed;
 public:
+    
     
     // constructor
     //HashTable( int tableLength = 701 );
@@ -205,6 +172,8 @@ template<class T>
 void HashTable<T>::insertItem(T x)
 {
     int index = hash(x);
+    
+    //lock_guard<mutex> bloqueo(barrier);
     array[ index ].insert( x );
 }
 
